@@ -12,6 +12,13 @@
         "url": "https://github.com/felipegamadev/marketplace-model"
     },
     "license": "MIT",
+    "workspaces": [
+        "apps/*"
+    ],
+    "scripts": {
+        "api": "yarn workspace @marketplace-model/api",
+        "web": "yarn workspace @marketplace-model/web"
+    },
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^6.4.0",
         "eslint": "^8.0.1",
